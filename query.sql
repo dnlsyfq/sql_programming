@@ -31,10 +31,27 @@ ON people.state_code = states.state_abbrev
 WHERE people.shirt_or_hat = 'hat'
 GROUP BY states.state_name */
 
-SELECT  
+/* SELECT  
     states.division,
     people.team,
     COUNT(people.team)
 FROM people JOIN states 
 ON people.state_code = states.state_abbrev
-GROUP BY states.division, people.team
+GROUP BY states.division, people.team */
+
+/* select 1/3;
+ */
+
+ /* SELECT first_name, last_name, quiz_points
+ FROM people
+ WHERE quiz_points = (SELECT MAX(quiz_points) FROM people)
+
+  */
+
+/* SELECT *
+FROM people
+WHERE state_code = (
+    SELECT state_abbrev
+    FROM states
+    WHERE state_name = 'Minnesota'
+); */

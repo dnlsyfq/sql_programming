@@ -33,3 +33,20 @@ where associated records are removed in order to maintain consistency
   * Third normal form (3NF)
 
 
+### Compound Queries 
+
+```
+ SELECT first_name, last_name, quiz_points
+ FROM people
+ WHERE quiz_points = (SELECT MAX(quiz_points) FROM people)
+```
+
+### Function
+* SUBSTR(col,start,stop)
+* CAST(col AS CHAR)
+
+### CRUD 
+
+INSERT INTO table(col) VALUES(val),(val)
+
+UPDATE table SET col=val , col2=val2 WHERE condition
