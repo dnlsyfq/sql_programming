@@ -28,7 +28,7 @@ where associated records are removed in order to maintain consistency
 * Reduce redundancy
 * Improve integrity
 * Normalization Rules
-  * First normal form (1NF) - Values in each cell should be atomic and tables should have no repeating groups
+  * First normal form (1NF) - Values in each cell should be atomic and tables should have no repeating groups . Each field in each table , has one value in it . No column repeated data in each row . No duplicate rows
   * Second normal form (2NF)
   * Third normal form (3NF)
 
